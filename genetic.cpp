@@ -186,7 +186,7 @@ vector<Item> manual_input(int& n, int& max_weight) noexcept {
 vector<Item> file_input(int& n, int& max_weight, const string& filename) {
     ifstream file(filename);
     if (!file.is_open()) {
-        cerr << "Ошибка: не удалось открыть файл '" << filename << "'.\n";
+        cerr << "Error: can't open the file '" << filename << "'.\n";
         return {};
     }
 
